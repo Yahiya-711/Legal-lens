@@ -62,11 +62,7 @@ LEGAL-LENS-AI/
 │   ├── _init_.py
 │   ├── interface.py             # Streamlit or Flask frontend
 │   └── display.py               # UI logic for summary/audio
-│
-└── tests/                      # Unit tests (optional if time permits)
-    ├── test_parser.py
-    ├── test_summarizer.py
-    └── test_tts.py
+
 ```
 
 ---
