@@ -1,0 +1,31 @@
+# UI Framework
+streamlit==1.33.0
+
+# PDF & DOCX Parsing
+pdfminer.six==20221105
+python-docx==0.8.11
+docx2txt==0.8
+
+# Summarization & API
+requests==2.31.0
+deepseek==0.1.7  # Official Python SDK (or latest)
+
+# LangChain (if you decide to build agent-based logic)
+langchain==0.1.14
+langchain-community==0.0.35
+langchain-core==0.1.37
+
+# Text-to-Speech
+gTTS==2.3.2
+pydub==0.25.1
+
+# Audio Playback
+simpleaudio==1.0.4
+
+# Utility
+tqdm==4.66.2
+
+# 🔍 Notes:
+The deepseek package lets you interact with DeepSeek APIs (e.g., summarization).
+
+langchain, langchain-core, and langchain-community are split this way as of LangChain v0.1+.
