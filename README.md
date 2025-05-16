@@ -35,7 +35,6 @@ Many users blindly accept terms & agreements by clicking “I Agree” without r
 Legal-Lens-AI/
 │
 ├── .env                  # API keys
-├── config.py             # Global variables & setup
 ├── README.md
 ├── requirements.txt
 ├── app.py                # Main Streamlit app
