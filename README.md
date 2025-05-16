@@ -32,36 +32,25 @@ Many users blindly accept terms & agreements by clicking “I Agree” without r
 
 ## 🗂️ Project Folder Structure
 ```
-LEGAL-LENS-AI/
+Legal-Lens-AI/
 │
+├── .env                  # API keys
+├── config.py             # Global variables & setup
 ├── README.md
 ├── requirements.txt
-├── main.py                       # Main orchestrator or Streamlit app
-├── config.py                    # API keys and constants
+├── app.py                # Main Streamlit app
 │
-├── assets/                      # Static files
-│   ├── sample_docs/             # Example PDFs or DOCX for testing
-│   └── audio_outputs/           # Generated MP3 files
+├── parser_agent/
+│   └── parser.py         # Handles PDF/DOCX parsing
 │
-├── parser_agent/                # Member 1
-│   ├── _init_.py
-│   ├── parser.py                # PDF/DOCX parsing logic
-│   └── utils.py                 # Helper functions (cleaning, etc.)
+├── nlp/
+│   └── summarizer.py     # Handles summarization, Q&A, risk score
 │
-├── summarizer_agent/           # Member 2
-│   ├── _init_.py
-│   ├── summarizer.py            # DeepSeek or LLM summarization logic
-│   └── chunker.py               # Optional: Break long text into chunks
+├── tts_agent/
+│   └── tts.py            # gTTS logic for voice summary
 │
-├── tts_agent/                  # Member 3
-│   ├── _init_.py
-│   ├── tts.py                   # GTTS text-to-speech logic
-│   └── audio_utils.py           # Audio cleanup, caching
-│
-├── ui_frontend/                # Member 4
-│   ├── _init_.py
-│   ├── interface.py             # Streamlit or Flask frontend
-│   └── display.py               # UI logic for summary/audio
+└── ui_frontend/
+    └── interface.py      # Streamlit layout, inputs, outputs
 
 ```
 
