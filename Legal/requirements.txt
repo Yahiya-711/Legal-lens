@@ -1,7 +1,0 @@
-streamlit
-PyMuPDF
-gTTS
-python-dotenv
-requests
-pytesseract
-Pillow
