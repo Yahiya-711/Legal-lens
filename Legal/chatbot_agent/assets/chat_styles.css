@@ -1,0 +1,23 @@
+/* Chat message bubbles */
+.user-message {
+    background: #0d6efd;
+    color: white;
+    border-radius: 18px 18px 0 18px;
+    padding: 10px 15px;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.bot-message {
+    background: #f1f3f4;
+    border-radius: 18px 18px 18px 0;
+    padding: 10px 15px;
+    max-width: 80%;
+}
+
+/* Timestamps */
+.message-timestamp {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 4px;
+}
